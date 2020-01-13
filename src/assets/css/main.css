@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+select {
+  box-sizing: border-box;
+}
