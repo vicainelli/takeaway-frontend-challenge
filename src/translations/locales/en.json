@@ -1,0 +1,24 @@
+{
+  "home": "Home",
+  "search": "Search",
+  "order": "Order",
+  "orders": "Orders",
+  "profile": "Profile",
+  "workingInProgress": "Working in progress",
+  "orderDetail": "Order detail",
+  "deliveryFee": "Delivery fee",
+  "total": "Total",
+  "orderedOn": "Ordered on",
+  "paymentMethod": "Payment method",
+  "deliveryAddress": "Delivery address",
+  "languages": [
+    {
+      "label": "English",
+      "abbr": "en"
+    },
+    {
+      "label": "Portuguese",
+      "abbr": "pt"
+    }
+  ]
+}

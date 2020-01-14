@@ -1,0 +1,24 @@
+{
+  "home": "Início",
+  "search": "Bucar",
+  "order": "Pedido",
+  "orders": "Pedidos",
+  "profile": "Perfil",
+  "workingInProgress": "Trabalho em andamento",
+  "orderDetail": "Detalhes do pedido",
+  "deliveryFee": "Taxa de entrega",
+  "total": "Total",
+  "orderedOn": "Feito em",
+  "paymentMethod": "Meio de pagamento",
+  "deliveryAddress": "Endereço de entrega",
+  "languages": [
+    {
+      "label": "Inglês",
+      "abbr": "en"
+    },
+    {
+      "label": "Português",
+      "abbr": "pt"
+    }
+  ]
+}
