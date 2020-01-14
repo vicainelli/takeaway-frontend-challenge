@@ -5,11 +5,13 @@
         <!-- <h2 class="uppercase tracking-wide text-sm text-gray-800">Personal Info</h2> -->
         <div class="flex items-center">
           <div class="mr-3">
-            <img
-              class="rounded-full bg-gray-200"
-              :src="getProfile.picture.thumbnail"
-              :alt="`${getProfile.firstName} ${getProfile.lastName}`"
-            />
+            <div class="border border-white bg-gray-300 w-12 h-12 rounded-full shadow">
+              <img
+                class="rounded-full"
+                :src="getProfile.picture.thumbnail"
+                :alt="`${getProfile.firstName} ${getProfile.lastName}`"
+              />
+            </div>
           </div>
           <div class="flex-1">
             <span class="text-lg font-semibold text-gray-900"
