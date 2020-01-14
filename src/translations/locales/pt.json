@@ -11,6 +11,13 @@
   "orderedOn": "Feito em",
   "paymentMethod": "Meio de pagamento",
   "deliveryAddress": "Endereço de entrega",
+  "gender": "Gênero",
+  "emailAddress": "Endereço de e-mail",
+  "address": "Endereço",
+  "birthday": "Dia de nascimento",
+  "appSettings": "Configurações do aplicativo",
+  "language": "Idioma",
+  "currency": "Moeda",
   "languages": [
     {
       "label": "Inglês",

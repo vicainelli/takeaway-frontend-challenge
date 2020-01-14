@@ -11,6 +11,13 @@
   "orderedOn": "Ordered on",
   "paymentMethod": "Payment method",
   "deliveryAddress": "Delivery address",
+  "gender": "Gender",
+  "emailAddress": "Email address",
+  "address": "Address",
+  "birthday": "Birthday",
+  "appSettings": "App Settings",
+  "language": "Language",
+  "currency": "Currency",
   "languages": [
     {
       "label": "English",
