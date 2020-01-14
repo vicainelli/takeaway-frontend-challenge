@@ -13,9 +13,15 @@ const routes = [
     component: Orders
   },
   {
+    path: '/orders/:id',
+    name: 'orderShow',
+    component: OrderShow
+  },
+  {
     path: '/profile',
     name: 'profile',
     component: Profile
   }
 ]
+
 export default routes
