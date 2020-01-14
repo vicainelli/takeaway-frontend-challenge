@@ -1,5 +1,5 @@
 <template>
-  <base-template :page-title="$t('orderDetail')">
+  <base-template :page-title="$t('orderDetail')" :back-button="{ pathTo: 'orders' }">
     <div v-if="didOrderLoad">
       <SectionCard>
         <h2 class="font-bold text-gray-900 text-base mb-6">{{ getOrder.restaurantName }}</h2>

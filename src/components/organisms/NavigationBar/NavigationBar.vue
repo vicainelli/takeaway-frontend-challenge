@@ -1,5 +1,5 @@
 <template>
-  <div class="border-t lg:border-0">
+  <div class="border-t lg:border-0 lg:mt-6">
     <nav class="flex lg:block">
       <navbar-link :label="$t('home')" path-to="home"> </navbar-link>
       <navbar-link :label="$t('orders')" path-to="orders"></navbar-link>
