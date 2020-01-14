@@ -1,6 +1,8 @@
 import Home from '@/components/pages/Home'
 import Orders from '@/components/pages/Orders'
 import Profile from '@/components/pages/Profile'
+import OrderShow from '@/components/pages/OrderShow'
+
 const routes = [
   {
     path: '/',
