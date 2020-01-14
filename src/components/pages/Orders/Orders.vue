@@ -1,9 +1,6 @@
 <template>
   <base-template :page-title="$t('orders')">
     <div v-if="didOrdersLoad">
-      <div>
-        <button @click="setActiveOrder">Set Order</button>
-      </div>
       <div v-for="(value, key) in allOrders" :key="key">
         <card-order
           :orderReference="key"

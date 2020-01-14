@@ -9,16 +9,6 @@ const api = axios.create({
   adapter: cache.adapter
 })
 
-const _activeOrder = {
-  FVVAWO: {
-    orderTime: '2019-07-15 16:44:06',
-    restaurantName: 'Big Burger Joint',
-    orderTotal: '16.95',
-    deliveryAddress: 'Streetname 1',
-    status: 'In transit'
-  }
-}
-
 const state = {
   orders: {},
   order: {},
@@ -32,6 +22,20 @@ const getters = {
 }
 
 const actions = {
+  async fetchActiveOrder({ commit, dispatch, getters }) {
+    const payload = {}
+    await dispatch('fetchOrders')
+    const arrOrders = Object.keys(getters.allOrders)
+    for (let i = 0; i < arrOrders.length; i++) {
+      const el = getters.allOrders[arrOrders[i]]
+      if (el.status.toLowerCase() === 'in transit') {
+        const key = arrOrders[1]
+        payload[key] = el
+        commit('SET_ACTIVE_ORDER', payload)
+        break
+      }
+    }
+  },
   async fetchOrders({ commit }) {
     commit('CHANGE_ORDERS_LOADED_STATE', false)
     const response = await api({
