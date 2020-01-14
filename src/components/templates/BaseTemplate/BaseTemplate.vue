@@ -15,17 +15,31 @@
           <h1 class="text-center lg:text-left uppercase tracking-wide">{{ pageTitle }}</h1>
         </div>
       </div>
-      <div class="px-4 pb-12">
+      <div class="px-4" :class="[getActiveOrder ? 'pb-28' : 'pb-12']">
         <slot />
       </div>
     </div>
 
+    <!-- Active Order -->
+    <div v-if="getActiveOrder" class="fixed z-10 lg:z-20 bottom-0 left-0 right-0 w-full">
+      <div to="" class="mb-12 lg:mb-4 shadow  mx-2 rounded  bg-white border-t-2 border-takeaway-400">
+        <router-link
+          class="border p-4 block"
+          :to="{ name: 'orderShow', params: { id: Object.keys(getActiveOrder)[0] } }"
+        >
+          <span class="text-xs uppercase tracking-wide mr-3">Active Order</span>
+
+          <span class="font-mono tracking-wide text-gray-800 text-xs">{{ Object.keys(getActiveOrder)[0] }}</span>
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import BackButton from '@/components/atoms/BackButton'
 import NavigationBar from '@/components/organisms/NavigationBar'
+import { mapGetters } from 'vuex'
 export default {
   name: 'base-template',
   components: {
@@ -41,6 +55,9 @@ export default {
       type: Object,
       default: null
     }
+  },
+  computed: {
+    ...mapGetters(['getActiveOrder'])
   }
 }
 </script>
