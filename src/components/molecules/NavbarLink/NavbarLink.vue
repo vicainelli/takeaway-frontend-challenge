@@ -1,6 +1,7 @@
 <template>
   <router-link
-    class="flex-1 text-center text-xs py-3 lg:flex-none lg:block lg:text-left lg:text-base"
+    class="flex-1 text-center text-xs py-3  text-gray-900 lg:flex-none lg:block lg:text-left lg:text-sm lg:tracking-wide lg:mx-3 lg:px-3 rounded"
+    exact-active-class="lg:bg-gray-400 font-semibold text-gray-900 lg:font-normal"
     :to="{ name: pathTo }"
   >
     <div class="">
@@ -27,9 +28,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.router-link-exact-active {
-  font-weight: bold;
-}
-</style>
