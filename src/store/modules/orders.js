@@ -53,9 +53,6 @@ const actions = {
     })
     commit('SET_ORDER', response.data)
     commit('CHANGE_ORDER_LOADED_STATE', true)
-  },
-  async setActiveOrder({ commit }) {
-    commit('SET_ACTIVE_ORDER', _activeOrder)
   }
 }
 const mutations = {
